@@ -74,6 +74,8 @@ hr.orange-line {
     border-radius: 30px; /* Rounded corners */
     width: 80%; /* Set the width to 80% of the container */
     max-width: 1400px; /* Optional: limit maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+
 }
 
 .section h2 {
@@ -155,6 +157,8 @@ hr.orange-line {
     align-items: center;
     width: 45%; /* Adjust this value to fit two items per row */
     max-width: 300px; /* Limit max width */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
 }
 
 /* Institute Logo */
