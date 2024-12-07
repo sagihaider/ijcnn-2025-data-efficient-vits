@@ -285,6 +285,10 @@ hr.orange-line {
     .section {
         padding: 15px;
         margin: 20px 0;
+        width: 90%; /* Set width to 90% on smaller screens */
+        max-width: 1400px; /* Optional: limit max width if needed */
+        margin-left: auto; /* Center the section horizontally */
+        margin-right: auto; /* Center the section horizontally */
     }
 
     .section h2 {
