@@ -1,29 +1,318 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    color: black; /* Set text color to black for visibility */
+    background-color: white; /* Set background of the entire page to white */
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px; /* Fixed height for the first banner */
+    padding: 0 50px;
+    background-color: black; /* Black background for the first banner */
+    color: white; /* White text for contrast */
+    box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.second-banner {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Adds spacing between banners */
+    background-color: white; /* Ensure background remains white */
+    box-sizing: border-box; /* Maintain box consistency */
+}
+
+.second-banner img {
+    width: 70%; /* Set the width to a percentage (adjust as needed) */
+    max-height: 300px; /* Limit the maximum height of the image */
+    object-fit: contain; /* Ensure the image scales properly within the given dimensions */
+}
+
+.logo-container img {
+    height: 30px; /* Adjust the logo size as needed */
+}
+
+.session-info h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0; /* Ensure no extra spacing */
+}
+
+hr.orange-line {
+    border: 0;
+    height: 2px;
+    width: 90%; /* Set the width to 90% */
+    background-color: orange; /* Set the color of the horizontal line */
+    margin: 20px auto; /* Center the line and add space above and below */
+    display: block; /* Ensure it behaves like a block-level element */
+}
+
+.proposal-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.proposal-info h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.proposal-info p {
+    font-size: 1.2em;
+}
+
+
+/* General Section Styling */
+.section {
+    margin: 30px auto; /* Center the section horizontally */
+    padding: 20px;
     background-color: #f4f4f4;
-    color: #333;
+    border-radius: 30px; /* Rounded corners */
+    width: 80%; /* Set the width to 80% of the container */
+    max-width: 1400px; /* Optional: limit maximum width */
 }
-header {
-    background-color: #2a75f3;
-    color: white;
-    padding: 20px;
+
+.section h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #333; /* Dark text for headings */
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+    color: #555; /* Lighter text color for content */
+}
+
+/* List Styling */
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+/* Organizers Section Layout */
+.organizers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between organizers */
+    justify-content: space-around;
+}
+
+/* Each individual organizer */
+.organizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* 2 items per row */
+    max-width: 300px; /* Limit max width */
+}
+
+/* Organizer Image */
+.organizer-img {
+    width: 100px; /* Set the image size */
+    height: 100px; /* Set the image size */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image is not stretched */
+    margin-bottom: 10px;
+}
+
+/* Organizer Name and Affiliation */
+.organizer-info {
     text-align: center;
 }
-main {
-    padding: 20px;
+
+.name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
-section {
-    margin-bottom: 20px;
+
+.affiliation {
+    font-size: 1em;
+    color: #777; /* Lighter text for affiliation */
 }
-footer {
-    background-color: #333;
-    color: white;
+
+
+/* Institutes Section Layout */
+.institutes-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Space between institutions */
+    flex-wrap: wrap;
+}
+
+/* Each individual institute */
+.institute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* Adjust this value to fit two items per row */
+    max-width: 300px; /* Limit max width */
+}
+
+/* Institute Logo */
+.institute-img {
+    width: 200px; /* Set the logo size */
+    height: 200px; /* Set the logo size */
+    object-fit: contain; /* Ensure the logo scales correctly */
+    margin-bottom: 10px;
+}
+
+/* Institute Name and Affiliation */
+.institute-info {
     text-align: center;
-    padding: 10px 0;
 }
-a {
-    color: #2a75f3;
+
+.name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.affiliation {
+    font-size: 1em;
+    color: #777; /* Lighter text for affiliation */
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for depth */
+    text-align: left;
+}
+
+#contact h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #007bff; /* Blue color for links */
     text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Copyright Banner */
+.copyright-banner {
+    background-color: black; /* Set the background color to black */
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em; /* Smaller font size */
+    position: relative;
+    width: 100%; /* Ensure full width */
+    margin-top: 20px; /* Space above the banner */
+    clear: both; /* Ensure it clears previous elements */
+}
+
+.copyright-banner p {
+    margin: 0; /* Remove default margin for the paragraph */
+}
+
+/* Important Dates Section */
+#important-dates {
+    background-color: #f9f9f9; /* Light background color for the section */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for a slight 3D effect */
+}
+
+#important-dates h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#important-dates ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding-left: 0; /* Remove padding on left */
+}
+
+#important-dates li {
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Space between list items */
+}
+
+#important-dates li strong {
+    color: #333; /* Dark color for the date */
+}
+
+
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        height: auto; /* Allow dynamic height for small screens */
+    }
+
+    .logo-container {
+        margin-bottom: 20px;
+    }
+
+    .session-info h1 {
+        font-size: 1.2em;
+    }
+
+    .second-banner img {
+        width: 80%; /* Adjust for smaller screens */
+        max-height: 150px; /* Adjust height on smaller screens */
+    }
+
+    .section {
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    .section h2 {
+        font-size: 1.4em;
+    }
+
+    .section p, .section ul {
+        font-size: 1em;
+    }
+
+    .organizer {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .institute {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    #contact {
+        padding: 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.2em;
+    }
+
+    #contact p {
+        font-size: 1em;
+    }
+
+    .copyright-banner {
+        font-size: 0.8em; /* Smaller font on mobile devices */
+        padding: 8px; /* Less padding on mobile */
+    }
 }
